@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lite-injector">
+    <output-path>$PROJECT_DIR$/out/artifacts/lite_injector</output-path>
+    <root id="archive" name="lite-injector.jar">
+      <element id="library" level="project" name="reflections-0.9.12" />
+      <element id="library" level="module" name="JUnit4" module-name="lite-injector" />
+      <element id="module-output" name="lite-injector" />
+    </root>
+  </artifact>
+</component>
