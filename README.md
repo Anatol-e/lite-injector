@@ -24,7 +24,10 @@ Object could be saved by the special key. By default, key value is the Full Obje
 public class TargetObject {
 
     @FromContainer
-    private YourObject yourObject;
+    private YourObject1 yourObject1;
+
+    @FromContainer(name = STRING_KEY)
+    private YourObject2 yourObject2;
 }
 ``` 
 
