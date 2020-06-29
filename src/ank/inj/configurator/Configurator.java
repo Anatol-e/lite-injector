@@ -21,12 +21,12 @@ public class Configurator {
 
     public class ContainerConfigurator {
 
-        public ContainerConfigurator setObject(String name, Object object) {
+        public ContainerConfigurator put(String name, Object object) {
             Configurator.this.objects.put(name, object);
             return this;
         }
 
-        public ContainerConfigurator setObject(Object object) {
+        public ContainerConfigurator put(Object object) {
             Configurator.this.objects.put(object.getClass().getName(), object);
             return this;
         }

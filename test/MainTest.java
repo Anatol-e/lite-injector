@@ -12,6 +12,7 @@ import java.util.Map;
 import static configurer.TestConstants.KEY_NAME;
 import static configurer.TestConstants.TEST_ENTITY;
 import static configurer.TestConstants.TEST_ENTITY_BY_NAME;
+import static configurer.TestConstants.TEST_VALUE_STRING;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -54,16 +55,24 @@ public class MainTest {
     }
 
     @Test
-    public void Should_ReturnCorrectObjectFromInjector() throws ApplicationContainerInitializationException, IllegalAccessException {
+    public void Should_ReturnCorrectObjectFromInjector()
+            throws ApplicationContainerInitializationException, IllegalAccessException {
         SameLogicalObject sameLogicalObject = new Inj<SameLogicalObject>().init(new SameLogicalObject());
         assertEquals(sameLogicalObject.getTestEntity(), TEST_ENTITY);
     }
 
     @Test
-    public void Should_ReturnCorrectObjectFromInjector_WithKeyParameter() throws ApplicationContainerInitializationException, IllegalAccessException {
+    public void Should_ReturnCorrectObjectFromInjector_WithKeyParameter()
+            throws ApplicationContainerInitializationException, IllegalAccessException {
         SameLogicalObject sameLogicalObject = new Inj<SameLogicalObject>().init(new SameLogicalObject());
         assertEquals(sameLogicalObject.getTestEntity(), TEST_ENTITY);
     }
 
+    @Test
+    public void Should_ReturnCorrectStringObject()
+            throws ApplicationContainerInitializationException, IllegalAccessException {
+        SameLogicalObject sameLogicalObject = new Inj<SameLogicalObject>().init(new SameLogicalObject());
+        assertEquals(sameLogicalObject.getBranchId(), TEST_VALUE_STRING);
+    }
 
 }

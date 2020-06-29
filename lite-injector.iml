@@ -21,7 +21,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="reflections-0.9.12" level="project" />
-    <orderEntry type="library" name="classindex-3.9" level="project" />
-    <orderEntry type="library" name="javassist-3.27.0-GA" level="project" />
+    <orderEntry type="library" exported="" name="javassist-3.27.0-GA" level="project" />
   </component>
 </module>
